@@ -1,6 +1,6 @@
 ## How it works    
   
-This application sends buy and sell orders to Binance according to posted order information formatted into JSON.  
+This application sends market orders to Binance according to posted order information formatted into JSON.  
 I'm not sure but something like this. 
   
 {   
