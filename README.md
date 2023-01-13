@@ -16,11 +16,11 @@ I'm not sure but something like this.
 3, Select your repository to deploy.   
   
 That's... it...  way too easy.  
-
+  
 ## Environment variable  
 Please check "env.todo" file in the root directory.   
-
+  
 ## Disclaimer
-The ordering logic is customized complicatedly.  
-Consider this app as a mock.
-I don't care whatever happens to you because of this system.
+The order-creating logic inside this system is customized complicatedly depending on my trading ideas.  
+Consider this app as a mock.  
+Remember that it's always your responsibility whatever happens to you.  
