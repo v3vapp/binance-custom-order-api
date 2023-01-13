@@ -1,0 +1,6 @@
+flask
+gunicorn
+ccxt
+pandas
+discordwebhook
+python-dotenv
