@@ -31,7 +31,7 @@ if  spotMode == True:
     "apiKey": config.apiKey,
     "secret": config.secretKey})
 
-webhook_url = 'https://discord.com/api/webhooks/984492687380078642/XLMVOkLxgpbjdnFMjDckL1wFFVzTVv1xkM28ApUzMPL_gwyePw9RkOJ8bWRVr5LS4nOS'
+webhook_url = config.discord_webhook
 EntryAvatar = "https://1.bp.blogspot.com/-QoKsMMCJ8-0/WRaTRHKz2OI/AAAAAAABEPk/RlblEittYVoUvpl_VjBzifrx9yjToucXgCLcB/s400/kenkyu_man_seikou.png"
 ExitAvatar = "https://1.bp.blogspot.com/-QoKsMMCJ8-0/WRaTRHKz2OI/AAAAAAABEPk/RlblEittYVoUvpl_VjBzifrx9yjToucXgCLcB/s400/kenkyu_man_seikou.png"
 faildAvatar = "https://4.bp.blogspot.com/-pi2OEw0-Eew/XJB5M76Zf9I/AAAAAAABR9I/5FrJ3BqUJtUKKUVvvIJnxQ54v6O97HL0ACLcBGAs/s180-c/science_hakase_shippai.png"
