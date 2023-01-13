@@ -12,8 +12,8 @@ I'm not sure but something like this.
 
 ## Deploy
 1, Push to Github.  
-2, Go to Heroku and set "Reveal Config Vars".
-3, Select your repository to deploy. 
+2, Go to Heroku and set "Reveal Config Vars".  
+3, Select your repository to deploy.   
   
 That's... it...  way too easy.  
 
