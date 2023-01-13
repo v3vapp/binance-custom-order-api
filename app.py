@@ -34,7 +34,7 @@ if  spotMode == True:
 webhook_url = config.discord_webhook
 EntryAvatar = "https://1.bp.blogspot.com/-QoKsMMCJ8-0/WRaTRHKz2OI/AAAAAAABEPk/RlblEittYVoUvpl_VjBzifrx9yjToucXgCLcB/s400/kenkyu_man_seikou.png"
 ExitAvatar = "https://1.bp.blogspot.com/-QoKsMMCJ8-0/WRaTRHKz2OI/AAAAAAABEPk/RlblEittYVoUvpl_VjBzifrx9yjToucXgCLcB/s400/kenkyu_man_seikou.png"
-faildAvatar = "https://4.bp.blogspot.com/-pi2OEw0-Eew/XJB5M76Zf9I/AAAAAAABR9I/5FrJ3BqUJtUKKUVvvIJnxQ54v6O97HL0ACLcBGAs/s180-c/science_hakase_shippai.png"
+failedAvatar = "https://4.bp.blogspot.com/-pi2OEw0-Eew/XJB5M76Zf9I/AAAAAAABR9I/5FrJ3BqUJtUKKUVvvIJnxQ54v6O97HL0ACLcBGAs/s180-c/science_hakase_shippai.png"
 
 ##############################################################################################################################
 
@@ -53,9 +53,9 @@ def ENTRY(symbol,side,qty,cost, free):
         print(orderInfo)
         
     except Exception as e:
-        reason = "an exception occured at Entry Order- {}".format(e)
+        reason = "an exception occurred at Entry Order- {}".format(e)
 
-        main_content = {"username": symbol,"avatar_url": faildAvatar,"content": reason}
+        main_content = {"username": symbol,"avatar_url": failedAvatar,"content": reason}
         requests.post(webhook_url,main_content)
 
         print(reason)
@@ -76,15 +76,15 @@ def EXIT(symbol,side,qty,Exit_param, cost, free):
         requests.post(webhook_url,main_content)
 
     except Exception as e:
-        reason = "an exception occured at Exit Order- {}".format(e)
-        main_content = {"username": symbol,"avatar_url": faildAvatar,"content": reason}
+        reason = "an exception occurred at Exit Order- {}".format(e)
+        main_content = {"username": symbol,"avatar_url": failedAvatar,"content": reason}
         requests.post(webhook_url,main_content)
         print(reason)
         return False
     return order
 
 def PositionExists(symbol,side):
-    main_content = {"username": f"{symbol} ({side})","avatar_url": faildAvatar,"content": "Order Refused. Position Alredy Exists."}
+    main_content = {"username": f"{symbol} ({side})","avatar_url": failedAvatar,"content": "Order Refused. Position Alredy Exists."}
     requests.post(webhook_url,main_content)
     return False
 
