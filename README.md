@@ -23,4 +23,4 @@ Please check "env.todo" file in the root directory.
 ## Disclaimer
 The order-creating logic inside this system is customized complicatedly depending on my trading ideas.  
 Consider this app as a mock.  
-Remember that it's always your responsibility whatever happens to you.  
+Always remember that it's your responsibility whatever happens to you with this system.  
